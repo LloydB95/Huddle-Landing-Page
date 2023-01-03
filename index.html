@@ -17,10 +17,14 @@
           colors: {
             'violet': 'hsl(257, 40%, 49%)',
             'smagenta': 'hsl(300, 69%, 71%)',
+            'white': 'hsl(0, 0%, 100%)'
           },
           fontFamily: {
             'poppins': ['Poppins'],
-            'open sans': ['Open Sans']
+            'opensans': ['Open Sans']
+          },
+          backgroundImage: {
+            'img': "url('./images/bg-desktop.svg')",
           }
         }
       }
@@ -33,14 +37,33 @@
 
 </head>
 
-<body>
+<body class="bg-img bg-violet flex bg-no-repeat bg-cover justify-center items-center h-screen w-screen">
 
-  Build The Community Your Fans Will Love
+  <main class="max-w-md">
+    <div>
+      <img src="./images/logo.svg">
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
-  Create connections with your users as you engage in genuine discussion.
+    </div>
 
-  Register
+
+    <div>
+      <img src="./images/illustration-mockups.svg">
+
+    </div>
+
+    <div class="text-white flex flex-col space-y-4">
+
+      <a class="font-poppins font-semibold text-4xl">
+        Build The Community Your Fans Will Love</a>
+
+      <p class="font-opensans font-normal">
+        Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
+        Create connections with your users as you engage in genuine discussion.</p>
+
+      Register
+
+    </div>
+  </main>
 
 
 </body>
