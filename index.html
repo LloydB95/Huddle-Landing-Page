@@ -2,74 +2,76 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+    <title>Frontend Mentor | Huddle landing page with single introductory section</title>
 
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'violet': 'hsl(257, 40%, 49%)',
-            'smagenta': 'hsl(300, 69%, 71%)',
-            'white': 'hsl(0, 0%, 100%)'
-          },
-          fontFamily: {
-            'poppins': ['Poppins'],
-            'opensans': ['Open Sans']
-          },
-          backgroundImage: {
-            'img': "url('./images/bg-desktop.svg')",
-          }
-        }
-      }
-    }</script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'violet': 'hsl(257, 40%, 49%)',
+                        'smagenta': 'hsl(300, 69%, 71%)',
+                        'white': 'hsl(0, 0%, 100%)'
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins'],
+                        'opensans': ['Open Sans']
+                    },
+                    backgroundImage: {
+                        'img': "url('./images/bg-desktop.svg')",
+                    }
+                }
+            }
+        }</script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap"
-    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body class="bg-img bg-violet flex bg-no-repeat bg-cover h-screen w-screen">
 
-  <main class="max-w-auto">
+    <main class="max-w-auto">
 
-    <div class="p-12">
-      <img src=" ./images/logo.svg">
+        <div class="p-12">
+            <img src=" ./images/logo.svg">
 
-    </div>
+        </div>
 
-    <div class="flex flex-row">
+        <div class="flex flex-row">
 
-      <img src="./images/illustration-mockups.svg">
+            <img class="pl-14" src="./images/illustration-mockups.svg">
 
-      <div class="flex flex-col p-12">
-        <a class="text-white font-poppins font-semibold text-4xl pb-6">
-          Build The Community Your Fans Will Love</a>
+            <div class="text-white flex flex-col p-12">
+                <h1 class="font-poppins font-semibold text-4xl pb-6">
+                    Build The Community Your Fans Will Love</h1>
 
-        <p class="text-white font-opensans font-normal pb-6">
-          Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
-          Create connections with your users as you engage in genuine discussion.</p>
+                <p class="font-opensans font-normal pb-6">
+                    Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
+                    Create connections with your users as you engage in genuine discussion.</p>
 
-        <p
-          class="bg-white rounded-xl p-2 text-violet font-poppins hover:bg-smagenta hover:text-white flex justify-center items-center cursor-pointer">
-          Register</p>
-      </div>
+                <div>
+                    <button
+                        class="shadow-lg bg-white rounded-full py-3 px-16 text-violet font-poppins hover:bg-smagenta hover:text-white transition-color duration-100">
+                        Register </button>
+                </div>
+            </div>
 
-    </div>
+        </div>
 
-    <div>
-      PLACEHOLDER TEXT FOR ICONS
+        <div class="flex items-end">
 
-    </div>
-  </main>
+
+        </div>
+    </main>
 
 
 </body>
